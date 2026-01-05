@@ -1,30 +1,15 @@
-import "./App.css";
+import React from "react";
+import { Header } from "./components/Header";
+import { Main } from "./components/Main";
+import { Footer } from "./components/Footer";
+import "./styles/App.scss";
 
-function App() {
+export const App = () => {
   return (
-    <main className="container">
-      <h1>React – fordele og ulemper</h1>
-
-      <section>
-        <h2>Fordele</h2>
-        <ul>
-          <li>Genbrugelige komponenter</li>
-          <li>Hurtig rendering med Virtual DOM</li>
-          <li>Stort community og mange libraries</li>
-          <li>God struktur til større applikationer</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Ulemper</h2>
-        <ul>
-          <li>Stejl læringskurve for begyndere</li>
-          <li>Kræver ekstra opsætning (fx Vite, Webpack)</li>
-          <li>Hyppige ændringer i økosystemet</li>
-        </ul>
-      </section>
-    </main>
+    <div className="app">
+      <Header />
+      <Main />
+      <Footer />
+    </div>
   );
-}
-
-export default App;
+};
