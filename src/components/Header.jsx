@@ -1,10 +1,9 @@
-import React from "react";
-import "../styles/_Header.scss";
+import styles from "./Header.module.scss";
 
 export const Header = () => {
   return (
-    <header className="header">
-      <h1>Velkommen til min React App</h1>
+    <header className={styles.header}>
+      <h1 className={styles.title}>Velkommen til min React App</h1>
     </header>
   );
 };
