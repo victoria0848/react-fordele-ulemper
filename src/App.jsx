@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 import { Greeting } from "./components/Greeting";
 import { PropsHeader } from "./components/PropsHeader";
 import { List } from "./components/List";
+import { Button } from "./components/Button";
 import "./styles/App.scss";
 
 export const App = () => {
@@ -40,6 +41,27 @@ export const App = () => {
       <Main>
         <List title="Mine livretter" items={favoriteFoods} />
         <List title="Mine favoritfilm" items={favoriteMovies} />
+
+        <Button
+          text="Gem"
+          size="small"
+          theme="light"
+          action={() => alert("Du klikkede på Gem")}
+        />
+
+        <Button
+          text="Send"
+          size="medium"
+          theme="dark"
+          action={() => alert("Du klikkede på Send")}
+        />
+
+        <Button
+          text="Slet"
+          size="large"
+          theme="dark"
+          action={() => alert("Du klikkede på Slet")}
+        />
       </Main>
 
       <Footer />
